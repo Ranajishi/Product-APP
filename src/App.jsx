@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <ToastContainer position="top-center" />
+      <ToastContainer position="top-center" autoClose={1000}/>
       <samplecontext.Provider value={ {id, setid , products, setproducts } }>
         <BrowserRouter>
           <Routes>
